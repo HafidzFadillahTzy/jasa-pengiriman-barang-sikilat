@@ -1,0 +1,65 @@
+==========================================
+PANDUAN INSTALASI CEPAT
+Jasa Pengiriman Barang
+==========================================
+
+LANGKAH 1: SETUP XAMPP
+----------------------
+1. Pastikan XAMPP sudah terinstall
+2. Buka XAMPP Control Panel
+3. Start Apache dan MySQL
+4. Pastikan tidak ada error
+
+LANGKAH 2: IMPORT DATABASE
+--------------------------
+1. Buka browser
+2. Akses: http://localhost/phpmyadmin
+3. Klik tab "Import" di bagian atas
+4. Klik "Choose File" dan pilih file: database.sql
+5. Klik tombol "Go" di bagian bawah
+6. Tunggu sampai muncul pesan sukses
+
+LANGKAH 3: COPY FILE PROJECT
+-----------------------------
+1. Copy seluruh folder project ini
+2. Paste ke folder: C:\xampp\htdocs\
+3. Atau bisa juga di folder lain, sesuaikan path
+
+LANGKAH 4: SETUP PASSWORD (OPSIONAL)
+-------------------------------------
+1. Buka browser
+2. Akses: http://localhost/nama-folder-project/setup.php
+3. Tunggu sampai muncul pesan "Setup Berhasil!"
+4. File ini hanya perlu dijalankan sekali
+
+LANGKAH 5: AKSES WEBSITE
+------------------------
+1. Buka browser
+2. Akses: http://localhost/nama-folder-project/
+   Contoh: http://localhost/jasa-pengiriman/
+3. Jika muncul halaman login, berarti berhasil!
+
+LANGKAH 6: LOGIN
+----------------
+Username: admin
+Password: admin123
+
+CATATAN PENTING:
+----------------
+- Jika ada error koneksi database, cek file: config/database.php
+- Pastikan password MySQL sesuai (default XAMPP biasanya kosong)
+- Jika port MySQL bukan 3306, sesuaikan di config/database.php
+
+TROUBLESHOOTING:
+----------------
+Error: "Access denied for user 'root'@'localhost'"
+Solusi: Edit config/database.php, sesuaikan DB_PASS dengan password MySQL Anda
+
+Error: "Unknown database 'jasa_pengiriman'"
+Solusi: Pastikan sudah import database.sql dengan benar
+
+Error: "404 Not Found"
+Solusi: Pastikan folder project ada di C:\xampp\htdocs\ dan nama folder benar
+
+==========================================
+
